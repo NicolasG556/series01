@@ -3,8 +3,9 @@
     <ul>
         <li><a href="{{ path('main_home') }}"title="home">Home</a> </li>
         <li><a href="{{ path('main_test') }}"title="test">Test</a></li>
-        <li><a href="{{ path('serie_list') }}" title="All series">All Series</a></li>
+        <li><a href="{{ path('serie_list', {'page' : 1}) }}" title="All series">All Series</a></li>
         <li><a href="{{ path('serie_create') }}" title="Add a new serie">Create</a></li>
+        <li><a href="{{ path('season_create') }}" title="Add a new season">Create a season</a></li>
 
     </ul>
 </nav>

@@ -1,10 +1,20 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
-    <h2>Create Series</h2>
-{% endblock %}
-
 {% block title %}
     {{ parent() }}
 {% endblock %}
+
+
+{% block body %}
+    <h2>Create a Serie</h2>
+
+    <div>
+        {{ form_start(serieForm) }}
+        {{ form_widget(serieForm) }}
+        <button>Create a serie</button>
+        {{ form_end(serieForm) }}
+    </div>
+{% endblock %}
+
+
 
